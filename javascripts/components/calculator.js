@@ -9,7 +9,7 @@ const calc = {
     display: ''
 };
 
-// Function that uses math functions from math.js and allows the calculator to work //
+// Function that uses math functions from math.js and allows the calculator to work 
 const calculate = () => {
     let answer = 0; // knows to start equation at 0
     switch(calc.mathType){
@@ -31,13 +31,13 @@ const calculate = () => {
     setDisplay(answer);
 };
 
-// Used to print the right number to the DOM // 
+// Print to DOM 
 const setDisplay = (someNumber) => {
     calc.display = someNumber;
     printToDom(calc.display, 'result');
 };
 
-// Used on the buttons event page to allow the division, add, mult, sub, equal buttons work //
+// Used on the buttons event page to allow the division, add, mult, sub, equal buttons work 
 const setMathType = (newMathType) => {
     calc.mathType = newMathType;
 }
