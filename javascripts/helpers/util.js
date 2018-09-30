@@ -1,11 +1,7 @@
-
 const printToDom = (stringToPrint, divId) => {
-    const selectedDiv = document.getElementById(divId);
-    selectedDiv.innerHTML += stringToPrint;
+    const printHere = document.getElementById(divId);
+    printHere.innerHTML = stringToPrint;
 };
 
-export {printToDom}
-
-// export default{
-//     printToDom: printToDom
-// }
+export {printToDom} // you may have to write {printToDom: printToDom} //
+//if the name of the function is different //
